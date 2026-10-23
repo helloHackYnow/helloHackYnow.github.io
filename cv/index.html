@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV — Victor Vimbert-Guerlais</title>
+<meta name="description" content="Curriculum vitae de Victor Vimbert-Guerlais, électronique, systèmes embarqués et FPGA. Téléchargement en français et en anglais.">
+<style>
+  :root {
+    --bg: #f7f7f5;
+    --fg: #1b1b1b;
+    --muted: #62626a;
+    --card: #ffffff;
+    --line: #e3e3df;
+    --accent: #1a5fb4;
+    --accent-fg: #ffffff;
+    --shadow: 0 1px 2px rgba(0,0,0,.04), 0 10px 30px rgba(0,0,0,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141416;
+      --fg: #ededf0;
+      --muted: #a0a0aa;
+      --card: #1d1d21;
+      --line: #2e2e34;
+      --accent: #78aeff;
+      --accent-fg: #0d1b2e;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 12px 34px rgba(0,0,0,.35);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.25rem;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { width: 100%; max-width: 720px; }
+  .back {
+    display: inline-block;
+    margin-bottom: 2.5rem;
+    color: var(--muted);
+    font-size: .9rem;
+    text-decoration: none;
+  }
+  .back:hover { color: var(--fg); }
+  h1 {
+    margin: 0 0 .4rem;
+    font-size: clamp(1.9rem, 5vw, 2.6rem);
+    font-weight: 650;
+    letter-spacing: -.02em;
+  }
+  .subtitle {
+    margin: 0 0 2.5rem;
+    color: var(--muted);
+    font-size: 1rem;
+  }
+  .subtitle strong { color: var(--fg); font-weight: 600; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.4rem;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+  }
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: .35rem;
+  }
+  .lang {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: -.01em;
+  }
+  .flag {
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .06em;
+    color: var(--muted);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: .15rem .45rem;
+  }
+  .meta {
+    margin: 0 0 1.3rem;
+    color: var(--muted);
+    font-size: .88rem;
+  }
+  .actions {
+    display: flex;
+    gap: .6rem;
+    margin-top: auto;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .45rem;
+    padding: .62rem 1rem;
+    border-radius: 9px;
+    font-size: .92rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: opacity .15s ease, border-color .15s ease, background .15s ease;
+  }
+  .btn svg { width: 16px; height: 16px; flex: none; }
+  .btn-primary {
+    background: var(--accent);
+    color: var(--accent-fg);
+    flex: 1;
+  }
+  .btn-primary:hover { opacity: .88; }
+  .btn-ghost {
+    color: var(--fg);
+    border-color: var(--line);
+    background: transparent;
+  }
+  .btn-ghost:hover { border-color: var(--muted); }
+  footer {
+    margin-top: 2.5rem;
+    color: var(--muted);
+    font-size: .82rem;
+  }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="../">← hellohackynow.github.io</a>
+
+  <h1>Curriculum Vitae</h1>
+  <p class="subtitle">
+    <strong>Victor Vimbert-Guerlais</strong> · Électronique, systèmes embarqués, FPGA
+  </p>
+
+  <div class="grid">
+    <section class="card" lang="fr">
+      <div class="card-top">
+        <span class="lang">Français</span>
+        <span class="flag">FR</span>
+      </div>
+      <p class="meta">PDF · 1 page · version à jour</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="cv_fr.pdf" download="CV_Victor_Vimbert-Guerlais_FR.pdf" type="application/pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Télécharger
+        </a>
+        <a class="btn btn-ghost" href="cv_fr.pdf" target="_blank" rel="noopener">Ouvrir</a>
+      </div>
+    </section>
+
+    <section class="card" lang="en">
+      <div class="card-top">
+        <span class="lang">English</span>
+        <span class="flag">EN</span>
+      </div>
+      <p class="meta">PDF · 1 page · up to date</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="cv_en.pdf" download="CV_Victor_Vimbert-Guerlais_EN.pdf" type="application/pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download
+        </a>
+        <a class="btn btn-ghost" href="cv_en.pdf" target="_blank" rel="noopener">View</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <a href="https://github.com/helloHackYnow">github.com/helloHackYnow</a>
+  </footer>
+</main>
+</body>
+</html>
